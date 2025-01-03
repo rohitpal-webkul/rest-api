@@ -1,14 +1,10 @@
 {
-    "name": "bagisto/rest-api",
+    "name": "unopim/bagisto-rest-api",
     "license": "MIT",
     "authors": [
         {
-            "name": "Devansh Bawari",
-            "email": "devansh.bawari419@webkul.in"
-        },  
-        {
-            "name": "Vivek Sharma",
-            "email": "viveksh047@webkul.in"
+            "name": "Rohit Pal",
+            "email": "rohitpal.oc563@webkul.in"
         }
     ],
     "require": {

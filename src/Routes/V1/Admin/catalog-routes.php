@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use Webkul\RestApi\Http\Controllers\V1\Admin\Catalog\AttributeController;
 use Webkul\RestApi\Http\Controllers\V1\Admin\Catalog\AttributeFamilyController;
+use Webkul\RestApi\Http\Controllers\V1\Admin\Catalog\BulkProductController;
 use Webkul\RestApi\Http\Controllers\V1\Admin\Catalog\CategoryController;
 use Webkul\RestApi\Http\Controllers\V1\Admin\Catalog\ProductController;
 
@@ -10,6 +11,13 @@ Route::group([
     'middleware' => ['auth:sanctum', 'sanctum.admin'],
     'prefix'     => 'catalog',
 ], function () {
+    /**
+     * Bulk product routes.
+     */
+    Route::controller(BulkProductController::class)->prefix('bulk-products')->group(function () {
+        Route::post('', 'store');
+    });
+
     /**
      * Product routes.
      */
