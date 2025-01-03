@@ -10,7 +10,7 @@
 
 #### Install the stable version of Bagisto Rest API from your console using the below command:
 ~~~
-composer require bagisto/rest-api
+composer require unopim/bagisto-rest-api
 ~~~
 
 ##### Add below options in the .env file (i.e. http://localhost/public your domain):
